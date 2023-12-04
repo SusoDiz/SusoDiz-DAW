@@ -8,10 +8,12 @@ WHERE e.numhijos >= 3
 ORDER BY comision ASC;
 
 2.	Obtener los nombres de los departamentos que no dependen de otros.
-
+   
+```sql
 SELECT d.nombre
 FROM departamentos d
 WHERE d.depto_jefe=0;
+```
 
 3.	Obtener, por orden alfabético, los nombres y los salarios de los empleados cuyo salario esté comprendido entre 1250 y 1300 euros.
 
