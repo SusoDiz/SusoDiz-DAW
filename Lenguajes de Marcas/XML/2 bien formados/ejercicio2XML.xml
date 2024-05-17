@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<empresa>
+  <programa>
+    <gestor>ThunderBird</gestor>
+  </programa>
+  <mensajes>
+    <remitente>micorreo@gmail.com</remitente>
+    <destinatario>tucorreo@gmail.com</destinatario>
+    <asunto>
+    Texto de asunto
+    </asunto>
+    <cuerpo>
+    Texto del cuerpo del correo
+    </cuerpo>
+    <adjuntos>
+      <fichero>imagen.png</fichero>
+      <fichero>documento.pdf</fichero>
+    </adjuntos>
+  </mensajes>
+</empresa>

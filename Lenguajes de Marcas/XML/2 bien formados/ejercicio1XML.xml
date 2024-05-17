@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="iso-8859-1" standalone="yes"?>
+<carta>
+<menu precio="10" tarjeta="no">
+ <comida>
+   <primero>sopa <opcion tipo="sobre"/></primero>
+   <segundo>chuleta<opcion tipo="cerdo"/></segundo>
+   <postre>flan<opcion tipo="huevo"/></postre>
+ <bebida tamaño="0.5">agua</bebida>
+ </comida>
+ </menu>
+<menu caro="25">
+ <comida>
+   <primero>entremeses<opcion tipo="ibericos"/></primero>
+   <segundo>chuleton<opcion tipo="ternera"/></segundo>
+   <postre>arroz con leche<opcion tipo="casero"/></postre>
+ <bebida tamaño="1">rioja</bebida>
+ </comida>
+ </menu>
+</carta>

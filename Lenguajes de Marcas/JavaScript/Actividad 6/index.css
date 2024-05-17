@@ -1,0 +1,48 @@
+input {
+    text-align: center;
+    font-size: 20px;
+    margin: 0 auto;
+    display: block;
+    top: 50%;
+}
+
+#botones button {
+    margin: 10 auto;
+    display: block;
+
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+#botones button:nth-child(3) {
+    background-color: orange;
+}
+
+#botones button:nth-child(4) {
+    background-color: orange;
+}
+
+#botones button:last-child {
+    background-color: #f44336;
+}
+
+#divLista {
+    font-size: 20px;
+    margin: 0 auto;
+    display: block;
+    top: 50%;
+    width: 50%;
+    text-align: center;
+}
+
+li {
+    
+    list-style-type: none;
+}

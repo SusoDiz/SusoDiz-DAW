@@ -1,0 +1,50 @@
+body {
+    background-color: #666666;
+    margin: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+li a {
+    background-color: #ffffcc;
+    width: 10%;
+    height: 20%;
+    padding-left: 25px;
+    margin: 2%;
+    position: relative;
+    float: left;
+    transform: rotate(-10grad);
+    box-shadow: 5px 5px 5px black;
+    transition: 1s;
+    
+}
+
+li:nth-child(even) a {
+    background-color: #ccffcc;
+    transform: rotate(10grad);
+}
+
+li:nth-child(3n+3) a {
+    background-color: #ccccff;
+    transform: rotate(-5grad);
+}
+
+li a:hover {
+    display: block;
+    transform: rotate(0grad);
+    transform: scale(1.2, 1.2);
+}
+
+li a:focus {
+    transform: rotate(0grad);
+    transform: scale(1.2, 1.2);
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ul {
+    list-style-type: none;
+}
+

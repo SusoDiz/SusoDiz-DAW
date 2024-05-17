@@ -1,0 +1,30 @@
+html{
+    background-color: #95E1FF;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.nov14 {
+    background-color: lightyellow;
+    border: solid 2px;
+    width: fit-content;
+    padding-left: 30px;
+    padding-right: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    empty-cells: hide;
+}
+
+caption{
+    font-weight: bold;
+    border-right: solid 2px;
+    border-bottom: solid 2px;
+}
+
+th, td{
+    border-right: solid 2px;
+    border-bottom: solid 2px;
+    text-align: center;
+    padding: 5px;
+
+    background-color: #FFFFEE;
+}

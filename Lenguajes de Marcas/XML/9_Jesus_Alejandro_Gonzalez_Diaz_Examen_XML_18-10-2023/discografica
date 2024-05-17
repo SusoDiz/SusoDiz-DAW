@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE disco SYSTEM "discografica.dtd">
+
+<disco>
+    <nombre-pais nombre="España" codigo="ES"/>
+    <nombre-pais nombre="Francia" codigo="FR"/>
+    <nombre-pais nombre="Portugal" codigo="PT"/>
+  <cancion duracion="3:12">
+    <titulo>The first song</titulo>
+    <compositor>
+      <pais nombre-pais="ES"/>
+      <nombre>Alberto</nombre>  
+      <apellidos>García Rodríguez</apellidos>
+    </compositor>
+    <compositor>
+      <pais nombre-pais="PT"/>
+      <nombre>Ronaldiño</nombre>  
+      <apellidos>Dos Santos</apellidos>
+    </compositor>
+    <discografica>D1discografica S.L.</discografica>
+    <artista>Santiago José</artista>
+  </cancion>
+  <cancion duracion="2:53" año="1995">
+    <titulo>La vida</titulo>
+    <compositor>
+      <pais nombre-pais="ES"/>
+      <nombre>Alberto</nombre>  
+      <apellidos>García Rodríguez</apellidos>
+    </compositor>
+    <compositor>
+      <pais nombre-pais="PT"/>
+      <nombre>Ronaldiño</nombre>  
+      <apellidos>Dos Santos</apellidos>
+    </compositor>
+    <compositor>
+      <pais nombre-pais="FR"/>
+      <nombre>María</nombre>  
+      <apellidos>Bonnet Bonnet</apellidos>
+    </compositor>
+    <productor>
+      <pais nombre-pais="ES"/>
+      <nombre>Alberto</nombre>  
+      <apellidos>García Rodríguez</apellidos>  
+    </productor>
+    <discografica>J1 Discos S.L.</discografica>
+    <artista sexo="hombre">Sergio Cáceres Manzano</artista>
+    <artista sexo="mujer">AMPARO GARCÍA-OTERO</artista>
+  </cancion>
+</disco>

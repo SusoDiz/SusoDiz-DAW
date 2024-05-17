@@ -1,0 +1,35 @@
+<html>
+
+<head>
+    <title>JavaScript y el Document Object Model</title>
+</head>
+
+<body>
+    <div id="page">
+        <div id="header">
+            <h1 id="title">título</h1>
+        </div>
+        <div id="content">
+            <h2>contenido del titulo</h2>
+            <p>algo copiado iría aqui</p>
+            <p>más cosas aqui</p>
+        </div>
+    </div>
+    <script>
+        var nodo = document.body.children[0]
+        alert("Su hermano anterior: " + nodo.previousSibling.nodeName);
+        alert("Su hermano siguiente: " + nodo.nextSibling.nodeName);
+        alert("Su padre nodo: " + nodo.parentNode.nodeName);
+        alert("¿Tiene nodos hijo?: " + nodo.hasChildNodes());
+        alert("Nº de hijos: " + nodo.childNodes.length);
+        alert("Nº de elementos que tiene: " + nodo.children.length);
+        alert("El primer hijo: " + nodo.firstChild.nodeName);
+        alert("El segundo hijo: " + nodo.childNodes[1].nodeName);
+        alert("El primer elemento hijo: " + nodo.firstElementChild.nodeName);
+        alert("Primer elemento hijo del div (El del id=header): " + nodo.childNodes[1].firstElementChild.nodeName);
+        alert("Nº de hijos de su primer elemento: " + nodo.firstElementChild.children.length);
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<biblioteca>
+ <libro>
+ <titulo>La vida está en otra parte</titulo>
+ <autor>Milan Kundera</autor>
+ <fechaPublicacion año="1973"/>
+ <puntos>5</puntos>
+ </libro>
+ <libro>
+ <titulo>Pantaleón y las visitadoras</titulo>
+ <autor fechaNacimiento="28/03/1936">Mario Vargas Llosa</autor>
+ <fechaPublicacion año="1973"/>
+ <puntos>3</puntos>
+ </libro>
+ <libro>
+ <titulo>Conversación en la catedral</titulo>
+ <autor fechaNacimiento="28/03/1936">Mario Vargas Llosa</autor>
+ <fechaPublicacion año="1969"/>
+ <puntos>4</puntos>
+ </libro>
+ <libro>
+ <titulo>Reina Roja</titulo>
+ <autor>Juan Gómez Jurado</autor>
+ <fechaPublicacion año="2010"/>
+ <puntos>5</puntos>
+ </libro>
+ <libro>
+ <titulo>Loba Negra</titulo>
+ <autor>Juan Gómez Jurado</autor>
+ <fechaPublicacion año="2014"/>
+ <puntos>4</puntos>
+ </libro>
+ <libro>
+ <titulo>Rey Blanco</titulo>
+ <autor>Juan Gómez Jurado</autor>
+ <fechaPublicacion año="2018"/>
+ <puntos>4.5</puntos>
+ </libro>
+</biblioteca>

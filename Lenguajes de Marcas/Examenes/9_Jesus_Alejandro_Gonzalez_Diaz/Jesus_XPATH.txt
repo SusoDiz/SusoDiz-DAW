@@ -1,0 +1,29 @@
+1.- Nombre de los ríos:
+//rio/nombre
+
+2.- Idiomas de las repúblicas:
+//paises[./pais/sistema="república"]//idioma
+
+3.- Países cuyo idioma es el español (Nombre del País):
+//pais[./idioma="español"]/@nombre
+
+4.- Tamaño de los países por donde pasa el Bidasoa:
+//pais[//rio/nombre="Bidasoa"]/superficie
+
+5.- Ríos de Europa:
+//rio[//continente/@nombre="Europa"]/nombre
+
+6.- Países que no usan euro:
+//pais[not(moneda='euro')]/@nombre
+
+7.- Cuantos países americanos hablan español:
+//paises[//continente/@nombre="América" and //pais/idioma="español"]/pais/@nombre
+
+8.- Rios que pasan por más de 2 países:
+//rio[count(pais)>2]
+
+9.- Nombre de los ríos que pasan por algún país que usan o usaron francos:
+
+
+10.- Por cuantos países pasa el último rio:
+count(//rio[last()]/pais)

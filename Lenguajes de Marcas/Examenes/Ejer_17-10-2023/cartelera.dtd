@@ -1,0 +1,18 @@
+<!ELEMENT cartelera (película+)>
+<!ELEMENT película (título, título_original?, nacionalidad, género, (clasificación|sin_clasificar), sinopsis, director, reparto, web?, cartel?)>
+<!ELEMENT reparto (actor+)>
+<!ELEMENT título (#PCDATA)>
+<!ELEMENT título_original (#PCDATA)>
+<!ELEMENT nacionalidad (#PCDATA)>
+<!ELEMENT género (#PCDATA)>
+<!ELEMENT clasificación EMPTY>
+<!ELEMENT sin_clasificar EMPTY>
+<!ELEMENT sinopsis (#PCDATA)>
+<!ELEMENT director (#PCDATA)>
+<!ELEMENT web (#PCDATA)>
+<!ELEMENT cartel (#PCDATA)>
+<!ELEMENT actor (#PCDATA)>
+<!ATTLIST película código CDATA #REQUIRED>
+<!ATTLIST película duración CDATA #REQUIRED>
+<!ATTLIST película año CDATA #REQUIRED>
+<!ATTLIST clasificación edad CDATA #REQUIRED>

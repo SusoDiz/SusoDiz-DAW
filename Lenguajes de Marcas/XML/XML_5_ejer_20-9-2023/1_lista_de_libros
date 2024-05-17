@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<lista>
+  <libro titulo="Don Quijote de la Mancha" autor="Miguel de Cervantes" año="2000"/>
+  <libro titulo="Historia de dos ciudades" autor="Charles Dickens" año="2001"/>
+  <libro titulo="Odisea" autor="Homero" año="2002"/>
+  </lista>

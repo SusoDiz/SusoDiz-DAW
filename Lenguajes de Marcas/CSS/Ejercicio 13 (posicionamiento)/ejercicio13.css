@@ -1,0 +1,58 @@
+body {
+    font-family: Arial;
+    width: auto;
+    height: auto;
+}
+
+h1 {
+    background-color: #bbbbbb;
+    margin-bottom: 0;
+    padding-left: 1%;
+}
+
+h2 {
+    background-color: #dddddd;
+    margin-top: 0;
+    padding-right: 1%;
+    text-align: right;
+    border-bottom: dotted #bbbbbb 3px;
+}
+
+.bloque {
+    border-left: dotted 3px #bbbbbb;
+    border-right: dotted 3px #bbbbbb;
+    margin-right: 0.5%;
+    padding: 1%;
+    float: left;
+    width: 10%;
+    /* overflow: auto; */
+}
+
+.bloque div {
+    border: solid 2px;
+    margin-bottom: 2%;
+}
+
+.bloque div p {
+    overflow: auto;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 1%;
+}
+
+.bloque h3 {
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #eeeeee;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    margin-top: 0;
+}
+
+.bloque h4 {
+    background-color: #bbbbbb;
+    padding-right: 2%;
+    text-align: right;
+    color: white;
+    margin-top: 0;
+}

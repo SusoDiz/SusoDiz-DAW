@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<biblioteca>
+<socios>
+<socio id="s1">
+<nombre>Alvaro Marrero</nombre>
+<dni>11223344</dni>
+<direccion>C/ La Rua, 23. 35121. </direccion>
+</socio>
+<socio id="s2">
+<nombre>Luisa Piñero</nombre>
+<dni>22334411</dni>
+<direccion>C/ Callo, 2. 23111.</direccion>
+</socio>
+<!-- Resto de socios -->
+</socios>
+<catalogo>
+<libro id="L1">
+<isbn>XXX</isbn>
+<nombre>Don Quijote de la Mancha</nombre>
+<editorial>Castalia</editorial>
+<año>1985</año>
+<autor>Miguel de Cervantes</autor>
+<!-- El primero no está prestado, el segundo sí -->
+<ejemplar id="L1e1" />
+<ejemplar id="L1e2" socio="s1" fecha="2023-10-21" plazo="15" />
+<!-- Más ejemplares -->
+</libro>
+<libro id="L2">
+<isbn>YYY</isbn>
+<nombre>La sombra del viento</nombre>
+<editorial>Sombralia</editorial>
+<año>2010</año>
+<autor>Carlos Ruiz</autor>
+
+<ejemplar id="L2e1" socio="s1" fecha="2023-10-21" plazo="15" />
+<ejemplar id="L2e2" socio="s2" fecha="2023-10-12" plazo="25" />
+<ejemplar id="L2e3"/>
+<!-- El tercero no está prestado, el primero y segundo  sí -->
+
+<!-- Más ejemplares -->
+</libro>
+<libro id="L3">
+<isbn>ZZZ</isbn>
+<nombre>Cumbres borrascosas</nombre>
+<editorial>Ediciones España</editorial>
+<año>1970</año>
+<autor>J. D. Salinger</autor>
+
+<ejemplar id="L3e1"  />
+<ejemplar id="L3e2"  />
+<ejemplar id="L3e3"  />
+<ejemplar id="L3e4"  />
+<ejemplar id="L3e5"  />
+<!-- No está prestado ninguno -->
+
+<!-- Más ejemplares -->
+</libro>
+<!-- Más libros -->
+</catalogo>
+</biblioteca>
+
+

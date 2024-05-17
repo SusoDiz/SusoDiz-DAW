@@ -1,0 +1,35 @@
+body {
+    background-image: url("./wp7147700.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    
+}
+
+img {
+    width: 80%;
+    height: auto;
+    display: block;
+    margin: 10% auto;
+    position: absolute;
+    top: -45;
+    left: -350;
+    animation-name: example;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+
+#div {animation-timing-function: linear;}
+
+@keyframes example {
+    0%   {transform: rotate(0);}
+    100% {transform: rotate(400grad);}
+}
+
+video {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    position: absolute;
+    top: -50;
+}

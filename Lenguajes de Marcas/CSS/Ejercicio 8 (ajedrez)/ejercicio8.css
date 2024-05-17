@@ -1,0 +1,28 @@
+table {
+    border: solid 3px;
+}
+
+.blanco {
+    background-color: white;
+}
+
+.negro {
+    background-color: black;
+}
+
+td {
+    border: solid 1px;
+    padding: 30px;
+}
+
+.fila_negra td {
+    background-repeat: no-repeat;
+    background-image: url("./Piezas/Peon-Negro.png");
+    background-position: center;
+}
+
+.fila_blanca td {
+    background-repeat: no-repeat;
+    background-image: url("./Piezas/Peon-Blanco.png");
+    background-position: center;
+}

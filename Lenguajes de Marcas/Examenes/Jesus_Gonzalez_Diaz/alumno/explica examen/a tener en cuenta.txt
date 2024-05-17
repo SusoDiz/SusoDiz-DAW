@@ -1,0 +1,19 @@
+letra arial
+colores:
+red
+white
+orange
+green
+silver
+black
+navy
+olive
+
+LOGO:
+#FFD700
+#C0C0C0
+
+
+Ejercicio LOGO 3 ptos
+Ejercicio Radio 4 ptos
+Ejercicio 3 (html+css) 3 ptos

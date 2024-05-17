@@ -1,0 +1,2 @@
+<!ELEMENT cv (candidato+)>
+<!ELEMENT candidato (datosPersonales, nombre, apellido1, apellido2,direcciontipo, direccion, calle, localidad, codigopostal, pais, level, idiomas, nombreidioma, nivel)>

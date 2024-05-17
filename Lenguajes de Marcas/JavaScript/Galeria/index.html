@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>Galeria</title>
+        <link rel="stylesheet" type="text/css" href="./index.css">
+        <script type="text/javascript" src="./index.js"></script>
+    </head>
+    <body>
+        <script>
+            let fotos = [
+                "./imagenes/moai_nubes.png",
+                "./imagenes/moai_bola.png",
+                "./imagenes/moai_hallowen.png",
+                "./imagenes/moai_navidad.jpg",
+                "./imagenes/moai_superbowl.png"
+            ]
+            let i = 0;
+            function AvanzarFoto(){
+                if (i > fotos.length - 1) {
+                    i = 0;
+                }
+                
+                document.getElementById("foto").src = fotos[i];
+            }
+
+            function RetrocederFoto(){
+                if (i < 0) {
+                    i = fotos.length - 1;
+                }
+                
+                document.getElementById("foto").src = fotos[i];
+            }
+        </script>
+
+        <img id="foto" src="./imagenes/moai_nubes.png" width="300" height="300">
+        <br><br>
+        <div id="botones">
+            <input type="button" value="⬅️" onclick="i--; RetrocederFoto()">
+            <input type="button" value="➡️" onclick="i++; AvanzarFoto()">
+        </div>
+    </body>
+</html>

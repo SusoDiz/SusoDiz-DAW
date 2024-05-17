@@ -1,0 +1,25 @@
+.uno{
+    border: 5px;
+    border-style: dotted dashed;
+    border-color: green orange red blue;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.dos{
+    border: 5px;
+    border-left: 10px;
+    border-right: 10px;
+    border-style: solid;
+    border-color: cyan black pink;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.tres{
+    border: 5px;
+    border-style: dotted;
+    border-color: green;
+    padding: 15px;
+    margin-bottom: 15px;
+}

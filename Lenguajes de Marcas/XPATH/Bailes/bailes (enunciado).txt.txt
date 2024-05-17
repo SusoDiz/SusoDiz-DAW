@@ -1,0 +1,23 @@
+﻿1. Muestra el nombre de todos los bailes.
+//baile/nombre
+
+2. Muestra el nombre y precio de todos los bailes.
+//baile/nombre | //baile/precio
+
+3. Muestra el nombre y precio de todos los bailes donde su precio es mayor que 40
+//baile/nombre | //baile[precio>=40]/precio
+
+4. Mostrar los nombres de los bailes que contienen una a.
+//baile[nombre[contains(., 'a')]]/nombre
+
+5. Mostrar el nombre de los bailes donde el apellido del profesor sea Lozano.
+//baile[profesor[contains(., 'Lozano')]]/nombre
+
+6. Mostrar todos los bailes, excepto el 3 y 5.
+//baile[not(@id='3' or @id='5')]/nombre
+
+7. Mostrar profesores que den clases de bailes por una cuota mensual.
+//baile[precio/@cuota='mensual']/profesor
+
+8. Mostrar el nombre de los bailes de la sala 1, que se pague con euros y el precio sea menor a 35.
+//baile[sala='1' and precio/@moneda='euro' and precio < 35]/nombre

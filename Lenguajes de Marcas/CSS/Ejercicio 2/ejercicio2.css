@@ -1,0 +1,21 @@
+h1, td, div p a{
+    color: green;
+}
+h2, caption, p em{
+    color: blue;
+}
+a, th, p strong{
+    color: red;
+}
+p .especial{
+    color: purple;
+}
+th.especial, strong, .destacado{
+    color: orange;
+}
+#adicional{
+    color: olive;
+}
+#especial{
+    color: fuchsia;
+}

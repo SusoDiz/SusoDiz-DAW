@@ -1,0 +1,12 @@
+- Cantidad depositada en la cuenta 20-A
+//cantidaddepositada[../../cuentaasociada="20-A"]
+
+- Todas las monedas usadas por los distintos fondos
+//fondo/datos/moneda
+           
+- DNI de las cuentas que usen dolares como moneda de base
+//titular/@dni[../../saldoactual/@moneda="dolares"]
+             
+- Toda la información de los fondos que usen «euros» por un valor inferior a 25000
+ //fondo[./datos/moneda="Euros" and ./datos/cantidaddepositada<"25000"]          
+ 

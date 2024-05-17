@@ -1,0 +1,9 @@
+<!ELEMENT gestion (producto+)>
+<!ELEMENT producto (codigo, nombre, descripcion, precio, categoria, disponibilidad, imagen)+>
+<!ELEMENT codigo (#PCDATA)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT descripcion (#PCDATA)>
+<!ELEMENT precio (#PCDATA)>
+<!ELEMENT categoria (#PCDATA)>
+<!ELEMENT disponibilidad (#PCDATA)>
+<!ELEMENT imagen (#PCDATA)>

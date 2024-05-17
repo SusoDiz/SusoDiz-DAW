@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE coleccion SYSTEM "album.dtd">
+<coleccion>
+  <album>
+    <fotografia>
+      <monumento>La catedral</monumento>
+     <lugar>La Laguna, Tenerife</lugar>
+      <fecha>
+        <dia>20</dia><mes>9</mes><año>2023</año>
+        <hora>17:30</hora>
+      </fecha>
+      <camara>Polaroid</camara>
+      <personas>Personas paseando</personas>
+    </fotografia>
+    <fotografia>
+     <lugar>Santa Cruz de Tenerife</lugar>
+      <fecha>
+        <dia>15</dia><mes>8</mes><año>2022</año>
+          <hora>12:30</hora>
+      </fecha>
+      <camara>Alcatel</camara>
+      <personas>Alcalde</personas>
+    </fotografia>
+    <fotografia>
+     <lugar></lugar>
+      <fecha>
+      <dia>25</dia><mes>12</mes><año>2019</año>
+        <hora>20:45</hora>
+      </fecha>
+      <camara>Go Pro</camara>
+      <personas>Escalador</personas>
+    </fotografia>
+  </album>
+  <album>
+    <fotografia>
+      <monumento>La catedral</monumento>
+     <lugar>La Laguna, Tenerife</lugar>
+      <fecha>
+        <dia>20</dia><mes>9</mes><año>2023</año>
+        <hora>17:30</hora>
+      </fecha>
+      <camara>Polaroid</camara>
+      <personas>Personas paseando</personas>
+    </fotografia>
+    <fotografia>
+     <lugar>Santa Cruz de Tenerife</lugar>
+      <fecha>
+        <dia>15</dia><mes>8</mes><año>2022</año>
+          <hora>12:30</hora>
+      </fecha>
+      <camara>Alcatel</camara>
+      <personas>Alcalde</personas>
+    </fotografia>
+    <fotografia>
+     <lugar></lugar>
+      <fecha>
+      <dia>25</dia><mes>12</mes><año>2019</año>
+        <hora>20:45</hora>
+      </fecha>
+      <camara>Go Pro</camara>
+      <personas>Escalador</personas>
+    </fotografia>
+  </album>
+</coleccion>

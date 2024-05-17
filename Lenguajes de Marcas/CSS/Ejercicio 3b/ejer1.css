@@ -1,0 +1,32 @@
+html{
+    background-color: yellow;
+    background-image: url(./img/notepad.jpg);
+    background-repeat: repeat-y;
+}
+
+body{
+    margin-left: 140px;
+}
+
+h1{
+    border-style: solid;
+    border-color: white;
+    background-color: blue;
+    padding-left: 70px;
+}
+
+h2{
+    background-color: red;
+}
+
+ul{
+    background-color: lightblue;
+}
+
+li{
+    border-style: dashed;
+    border-color: blue;
+    background-color: white;
+    padding: 15px 50px;
+    margin: 8px;
+}

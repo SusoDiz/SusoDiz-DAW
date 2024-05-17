@@ -1,0 +1,44 @@
+h1 {
+    text-align: center;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+p {
+    margin: 0%;
+    text-align: center;
+    padding-top: 3%;
+    width: 100%;
+    height: 10%;
+    font-size: 40px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.3);
+    transition: 0.5s;
+}
+
+.div {
+    width: 720px;
+    height: 720px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.Textos {
+    position: relative;
+    bottom: 100px;
+    transition: 1s;
+}
+
+.Textos:hover {
+    position: relative;
+    bottom: 190px;
+}
+
+p:hover {
+    background-color: rgba(255, 0, 0, 0.7);
+}

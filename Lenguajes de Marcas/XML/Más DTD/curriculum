@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE cv SYSTEM "cv.dtd">
+
+<cv DNI="A12345678" Fecha="10/10/2023">
+  <candidato>
+  <datosPersonales>
+    <nombre>Pepe</nombre>
+    <apellido1>Rodriguez</apellido1>
+    <apellido2>Garcia</apellido2>
+    <!-- Para los codigos de direccion -->
+    <direcciontipo nombre="Trabajo" codigo="T"/>
+    <direcciontipo nombre="Particular" codigo="P"/>
+    
+    <direccion direcciontipo="P"> <!-- T= Trabajo , P= Particular -->
+      <calle>Mi calle</calle>
+      <localidad>Mi localidad</localidad>
+      <codigopostal>38100</codigopostal>
+      <pais>España</pais>
+    </direccion>
+  </datosPersonales>
+  
+  <!-- Para los codigos de nivel -->
+    <level1 nombre="Alto" codigo="Al"/>
+    <level1 nombre="Medio" codigo="Me"/>  
+    <level1 nombre="Bajo" codigo="Ba"/>  
+  <!-- Para los codigos de nivel -->
+    <level2 nombre="Materno" codigo="Mat"/>
+    <level2 nombre="Extranjero" codigo="Ext"/>  
+  
+  <idiomas>
+    <nombreidioma>Español</nombreidioma>
+    <nivel level1="Al" level2="M">Alto</nivel>
+  </idiomas>
+  </candidato>
+</cv>

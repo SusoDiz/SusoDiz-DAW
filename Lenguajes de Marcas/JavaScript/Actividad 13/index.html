@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>El Ahorcado</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <div>
+        <h1>El Ahorcado</h1>
+        <button id="jugar" onclick="iniciarJuego()">Jugar</button>
+        <p id="frase"></p>
+        <div id="letras"></div>
+        <p id="mensaje"></p>
+        <button id="reinicio" style="display: none;" onclick="iniciarJuego();">Reiniciar</button>
+        <div id="ahorcado"></div>
+        <h1 id="contador"></h1>
+    </div>
+
+    <script>
+        var frases = ["Ahorcado", "Ayuntamiento", "Neumatico"];
+        var frase;
+        var adivinado;
+        var letras = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        var fallos = 0;
+        var maxFallos = 6;
+        var contador;
+
+        function iniciarJuego() {
+            document.getElementById('letras').style.display = "block";
+            document.getElementById('jugar').style.display = "none";
+
+            frase = frases[Math.floor(Math.random() * frases.length)].toUpperCase();
+            adivinado = Array(frase.length).fill('_');
+            fallos = 0;
+
+            for (var i = 0; i < frase.length; i++) {
+                if (frase[i] === ' ') {
+                    adivinado[i] = '-';
+                }
+            }
+
+            document.getElementById('frase').textContent = adivinado.join(' ');
+            document.getElementById('mensaje').textContent = "";
+            document.getElementById('reinicio').style.display = "none";
+            document.getElementById('ahorcado').innerHTML = "";
+            document.getElementById('contador').textContent = "7";
+
+            for (var i = 0; i < letras.length; i++) {
+                var btn = document.getElementById('btn' + letras[i]);
+                btn.disabled = false;
+            }
+
+            contador = setInterval(function() {
+                var contadorElement = document.getElementById('contador');
+                var timeLeft = parseInt(contadorElement.textContent);
+                if (timeLeft > 0) {
+                    contadorElement.textContent = timeLeft - 1;
+                } else {
+                    clearInterval(contador);
+                    document.getElementById('mensaje').textContent = "¡Se acabó el tiempo! Has perdido.";
+                    document.getElementById('reinicio').style.display = "block";
+                    document.getElementById('letras').style.display = "none";
+                }
+            }, 1000);
+        }
+
+        for (var i = 0; i < letras.length; i++) {
+            var btn = document.createElement("button");
+            btn.id = 'btn' + letras[i];
+            btn.textContent = letras[i];
+            btn.onclick = function (e) {
+                var letra = e.target.textContent;
+                e.target.disabled = true;
+                var acierto = false;
+                for (var j = 0; j < frase.length; j++) {
+                    if (frase[j] === letra) {
+                        adivinado[j] = letra;
+                        acierto = true;
+                    }
+                }
+
+                if (!acierto) {
+                    fallos++;
+                    var ahorcadoElement = document.getElementById('ahorcado');
+                    ahorcadoElement.innerHTML += '<img src="./img/ahorcado_' + fallos + '.png" alt="ahorcado" />';
+                    if (fallos >= maxFallos) {
+                        clearInterval(contador);
+                        document.getElementById('mensaje').textContent = "¡Has perdido! La frase era: " + frase;
+                        document.getElementById('letras').style.display = "none";
+                        document.getElementById('reinicio').style.display = "block";
+                    }
+                }
+
+                document.getElementById('frase').textContent = adivinado.join(' ');
+
+                if (!adivinado.includes('_')) {
+                    clearInterval(contador);
+                    document.getElementById('mensaje').textContent = "¡Felicidades! Has adivinado la frase.";
+                    document.getElementById('reinicio').style.display = "block";
+                }
+            };
+            document.getElementById('letras').appendChild(btn);
+        }
+
+        //iniciarJuego();
+    </script>
+</body>
+
+</html>

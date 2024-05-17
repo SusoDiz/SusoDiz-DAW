@@ -1,0 +1,163 @@
+<html>
+
+<head>
+    <title>Tabla</title>
+    <link rel="stylesheet" type="text/css" href="./index.css">
+    <script type="text/javascript" href="./index.js"></script>
+</head>
+
+<body>
+    <h1>Filas y columnas:</h1>
+    <input type="number" placeholder="5" id="valorNumero">
+    <br><br>
+    <input type="button" name="boton" value="Crear Tabla" id="botonTabla">
+    <input type="color" name="color" id="selectColor">
+    <input type="button" name="botonCambiaColor" value="Cambiar color" id="botonCambiaColor">
+    <br><br>
+    <select name="Tamaño" id="tamaño">
+        <option value="Tamaño">Tamaño</option>
+        <option value="Diminuto">Diminuto</option>
+        <option value="Pequeño">Pequeño</option>
+        <option value="Mediano">Mediano</option>
+        <option value="Grande">Grande</option>
+    </select>
+
+    <script>
+        document.getElementById("botonTabla").onclick = function () {
+            var filas = document.getElementById("valorNumero").value;
+            var tabla = document.createElement("table");
+            for (var i = 0; i < filas; i++) {
+                var fila = document.createElement("tr");
+                for (var j = 0; j < filas; j++) {
+                    var columna = document.createElement("td");
+                    fila.appendChild(columna);
+                }
+                tabla.appendChild(fila);
+                //document.body.style.visibility = "invisible";
+            }
+
+            var borrar = document.createElement("button");
+            borrar.id = "borrar";
+            borrar.innerHTML = "🗑️ Borrar";
+            document.body.appendChild(borrar);
+            borrar.onclick = function () {
+                document.body.removeChild(tabla);
+                document.body.removeChild(borrar);
+                document.body.removeChild(botonArriba);
+                document.body.removeChild(botonAbajo);
+                document.body.removeChild(botonIzquierda);
+                document.body.removeChild(botonDerecha);
+                document.body.removeChild(botonCentro);
+            };
+
+            document.body.appendChild(tabla);
+            var circulo = document.createElement("div");
+            circulo.id = "circulo"; 
+            circulo.style.backgroundColor = document.getElementById("selectColor").value;
+            tabla.rows[0].cells[0].appendChild(circulo);
+
+            botonCambiaColor.onclick = function () {
+                circulo.style.backgroundColor = document.getElementById("selectColor").value;
+            };
+
+            var posicionX = 0;
+            var posicionY = 0;
+            
+            var botonArriba = document.createElement("button");
+            botonArriba.innerHTML = "⬆️";
+            document.body.appendChild(botonArriba);
+            botonArriba.id = "botonArriba";
+            botonArriba.onclick = function () {
+                if (posicionY > 0) {
+                    tabla.rows[posicionY].cells[posicionX].removeChild(circulo);
+                    posicionY--;
+                    tabla.rows[posicionY].cells[posicionX].appendChild(circulo);
+                }
+            };
+
+            var botonAbajo = document.createElement("button");
+            botonAbajo.id = "botonAbajo";
+            botonAbajo.innerHTML = "⬇️";
+            document.body.appendChild(botonAbajo);
+            botonAbajo.onclick = function () {
+                if (posicionY < tabla.rows.length - 1) {
+                    tabla.rows[posicionY].cells[posicionX].removeChild(circulo);
+                    posicionY++;
+                    tabla.rows[posicionY].cells[posicionX].appendChild(circulo);
+                }
+            };
+
+            var botonIzquierda = document.createElement("button");
+            botonIzquierda.id = "botonIzquierda";
+            botonIzquierda.innerHTML = "⬅️";
+            document.body.appendChild(botonIzquierda);
+            botonIzquierda.onclick = function () {
+                if (posicionX > 0) {
+                    tabla.rows[posicionY].cells[posicionX].removeChild(circulo);
+                    posicionX--;
+                    tabla.rows[posicionY].cells[posicionX].appendChild(circulo);
+                }
+            };
+
+            var botonDerecha = document.createElement("button");
+            botonDerecha.id = "botonDerecha";
+            botonDerecha.innerHTML = "➡️";
+            document.body.appendChild(botonDerecha);
+            botonDerecha.onclick = function () {
+                if (posicionX < tabla.rows[0].cells.length - 1) {
+                    tabla.rows[posicionY].cells[posicionX].removeChild(circulo);
+                    posicionX++;
+                    tabla.rows[posicionY].cells[posicionX].appendChild(circulo);
+                }
+            };
+
+            var botonCentro = document.createElement("button");
+            botonCentro.id = "botonCentro";
+            botonCentro.innerHTML = "⏺️";
+            document.body.appendChild(botonCentro);
+            botonCentro.onclick = function () {
+                tabla.rows[posicionY].cells[posicionX].removeChild(circulo);
+                posicionX = Math.floor(tabla.rows[0].cells.length / 2);
+                posicionY = Math.floor(tabla.rows.length / 2);
+                tabla.rows[posicionY].cells[posicionX].appendChild(circulo);
+            };
+
+            document.getElementById("tamaño").addEventListener("change", function() {
+                var tamaño = document.getElementById("tamaño").value;
+
+                switch (tamaño) {
+                    case "Diminuto":
+                        circulo.style.width = "20px";
+                        circulo.style.height = "20px";
+                        circulo.style.margin = "0";
+                        circulo.style.marginLeft = "35px";
+                        break;
+
+                    case "Pequeño":
+                        circulo.style.width = "30px";
+                        circulo.style.height = "30px";
+                        circulo.style.margin = "0";
+                        circulo.style.marginLeft = "30px";
+                        break;
+                    
+                    case "Mediano":
+                        circulo.style.width = "40px";
+                        circulo.style.height = "40px";
+                        circulo.style.margin = "0";
+                        circulo.style.marginLeft = "25px";
+                        break;
+                    
+                    case "Grande":
+                        circulo.style.width = "50px";
+                        circulo.style.height = "50px";
+                        circulo.style.margin = "0";
+                        circulo.style.marginLeft = "20px";
+                        break;
+                }
+            });
+        };
+    </script>
+    
+</body>
+
+</html>

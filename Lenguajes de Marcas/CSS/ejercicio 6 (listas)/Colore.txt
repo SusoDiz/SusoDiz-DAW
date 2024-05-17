@@ -1,0 +1,7 @@
+Colores:
+#E4A476
+#C38C65
+#825D43 
+#F4DAC7
+
+sans-serif

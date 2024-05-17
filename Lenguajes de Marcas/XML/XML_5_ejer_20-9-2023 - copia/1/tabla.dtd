@@ -1,0 +1,7 @@
+<!ELEMENT empresa (empleado)*>
+<!ELEMENT empleado (nombre, apellido, edad, departamento, cargo)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT apellido (#PCDATA)>
+<!ELEMENT edad (#PCDATA)>
+<!ELEMENT departamento (#PCDATA)>
+<!ELEMENT cargo (#PCDATA)>

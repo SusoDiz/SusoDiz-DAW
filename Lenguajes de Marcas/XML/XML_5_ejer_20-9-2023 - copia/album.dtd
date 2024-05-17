@@ -1,0 +1,12 @@
+<!ELEMENT coleccion (album+)>
+<!ELEMENT album (fotografia+)>
+<!ELEMENT fotografia (monumento?, lugar+, camara+, personas+)>
+<!ELEMENT  (dia+, mes+, año+, hora+)>
+<!ELEMENT monumento (#PCDATA)>
+<!ELEMENT lugar (#PCDATA)>
+<!ELEMENT dia (#PCDATA)>
+<!ELEMENT mes (#PCDATA)>
+<!ELEMENT año (#PCDATA)>
+<!ELEMENT hora (#PCDATA)>
+<!ELEMENT camara (#PCDATA)>
+<!ELEMENT personas (#PCDATA)>

@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE empresa SYSTEM "tabla.dtd">
+<empresa>
+  <empleado>
+    <nombre>Ana</nombre>
+    <apellido>Garcia</apellido>
+    <edad>30</edad>
+    <departamento>Ventas</departamento>
+    <cargo>Ejecutivo de ventas</cargo>
+  </empleado>
+  <empleado>
+    <nombre>Luis</nombre>
+    <apellido>Rodriguez</apellido>
+    <edad>45</edad>
+    <departamento>Finanzas</departamento>
+    <cargo>Analista financiero</cargo>
+  </empleado>
+  <empleado>
+    <nombre>Maria</nombre>
+    <apellido>Lopez</apellido>
+    <edad>28</edad>
+    <departamento>Marketing</departamento>
+    <cargo>Especialista en redes sociales</cargo>
+  </empleado>
+</empresa>

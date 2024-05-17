@@ -1,0 +1,30 @@
+table {
+    border: solid 15px;
+    border-color: darkblue;
+}
+
+td {
+    padding-top: 5px;
+    padding-right: 10px;
+    border: solid 1px;
+}
+
+.centro {
+    border: none;
+}
+
+.amarilla {
+    background-color: yellow;
+}
+
+.verde {
+    background-color: green;
+}
+
+.azul {
+    background-color: blue;
+}
+
+.roja {
+    background-color: red;
+}

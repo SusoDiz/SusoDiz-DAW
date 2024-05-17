@@ -1,0 +1,65 @@
+﻿1.- El identificador de socios de la biblioteca: 
+//socio/@id
+
+2.- La dirección del socio que se llama “Alvaro Marrero”: 
+//socio[nombre='Alvaro Marrero']/direccion
+
+3.- Los libros cuyo año de edición sea 2010: 
+//libro[año=2010]
+
+4.- Los libros de la editorial Alfaguara: 
+//libro[editorial='Alfaguara']
+
+5.- El número total de ejemplares que hay en la biblioteca: 
+count(//ejemplar)
+
+6.- Todos los libros cuyo autor sea “Miguel De Cervantes”: 
+//libro[autor='Miguel De Cervantes']
+
+7.- El número de ejemplares del libro con identificador L1: 
+count(//libro[@id='L1']/ejemplar)
+
+8.- El número total de ejemplares prestados: 
+count(//ejemplar[@socio])
+
+9.- El número total de ejemplares no prestados: 
+count(//ejemplar[not(@socio)])
+
+10.- El número de ejemplares prestados al socio “s1”: 
+count(//ejemplar[@socio='s1'])
+
+11.- Nombre de los libros que se han prestado al socio “s1”: 
+//libro[ejemplar/@socio='s1']/nombre
+
+12.- Los libros que no están prestados al socio “s1”: 
+//libro[not(ejemplar/@socio='s1')]
+
+13.- Los libros que se han prestado al socio “s1”, pero no al socio “s2”: 
+//libro[ejemplar/@socio='s1' and not(ejemplar/@socio='s2')]
+
+14.- El número de ejemplares de libros de la editorial Castalia: 
+count(//libro[editorial='Castalia']/ejemplar)
+
+15.- Los identificadores de los socios que tiene algún libro en préstamo: 
+//socio[@id=//ejemplar/@socio]/@id
+
+16.- Los ejemplares aún disponibles (no prestados) de “Don Quijote de La Mancha”: 
+//libro[nombre='Don Quijote de la Mancha']/ejemplar[not(@socio)]
+
+17.- Los libros de los que quedan menos de tres ejemplares en la biblioteca: 
+//libro[count(ejemplar)<3]
+
+18.- libros que tienen algun ejemplar sin prestar: 
+//libro[ejemplar[not(@socio)]]
+
+19.- libros que tienen solo 1 ejemplar sin prestar: 
+//libro[count(ejemplar[not(@socio)])=1]
+
+20.- Los libros de los que no se ha prestado ningún ejemplar: 
+//libro[not(ejemplar/@socio)]
+
+21.- Los libros que tiene todos los ejemplares prestados: 
+//libro[not(ejemplar[not(@socio)])]
+
+22.- Titulo de los libros que se le prestaron a Alvaro Marrero: 
+//libro[ejemplar/@socio=//socio[nombre='Alvaro Marrero']/@id]/nombre

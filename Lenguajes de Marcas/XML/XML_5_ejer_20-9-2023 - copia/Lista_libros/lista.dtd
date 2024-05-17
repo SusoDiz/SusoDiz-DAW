@@ -1,0 +1,5 @@
+<!ELEMENT lista (libro+)>
+<!ELEMENT libro EMPTY>
+<!ATTLIST libro titulo CDATA #REQUIRED>
+<!ATTLIST libro autor CDATA #REQUIRED>
+<!ATTLIST libro año CDATA #REQUIRED>

@@ -1,0 +1,30 @@
+-1. Nombre del Instituto. 
+/cifp/nombre
+ 
+-2. Página web del Instituto. 
+/cifp/web
+ 
+-3. Nombre de los Ciclos Formativos. /cifp/ciclos/ciclo/nombre
+
+-4. Siglas por las que se conocen los Ciclos Formativos. 
+/cifp/ciclos/ciclo/@id
+//@id
+
+-5. Años en los que se publicaron los decretos de título de los Ciclos Formativos. 
+/cifp/ciclos/ciclo/decretoTitulo[@año]
+//@año
+
+-6. Ciclos Formativos de Grado Medio (se trata de obtener el elemento <ciclo> completo)
+/cifp/ciclos/ciclo[grado='Medio']
+
+-7. Nombre de los Ciclos Formativos de Grado Superior.
+/cifp/ciclos/ciclo[grado='Superior']/nombre
+
+-8. Nombre de los Ciclos Formativos posteriores a 2008.
+/cifp/ciclos/ciclo[decretoTitulo/@año>'2008']/nombre
+
+-9. Nombre de los Ciclos Formativos de 2008 o 2009.
+/cifp/ciclos/ciclo[decretoTitulo/@año='2008' or decretoTitulo/@año='2009']/nombre
+
+-10. Ciclos Formativos de 2010.
+/cifp/ciclos/ciclo[decretoTitulo/@año='2010']

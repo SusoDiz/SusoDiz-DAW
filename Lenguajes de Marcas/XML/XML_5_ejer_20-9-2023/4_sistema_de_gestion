@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<gestion>
+  <producto codigo="1111">
+    <nombre>Portatil</nombre>
+    <descripcion>Ordenador Portatil</descripcion>
+    <precio>500€</precio>
+    <categoria>Informatica</categoria>
+    <disponibilidad>En stock</disponibilidad>
+    <imagen>https://www.worten.es/i/3f7f3301fc926ca29d502137d15254b6124de650.jpg</imagen>
+  </producto>
+  <producto codigo="2222">
+    <nombre>Monitor</nombre>
+    <descripcion>Pantalla para ordenador</descripcion>
+    <precio>200€</precio>
+    <categoria>Imagen</categoria>
+    <disponibilidad>Agotado</disponibilidad>
+    <imagen>https://ae.tejar.com/media/catalog/product/cache/4/image/9df78eab33525d08d6e5fb8d27136e95/d/e/dell_27_led-backlit_lcd_gaming_monitor_-_s2721dgf_-_tejar.jpg</imagen>
+  </producto>
+  <producto codigo="3333">
+    <nombre>Teclado</nombre>
+    <descripcion>Teclado mecanico para ordenador</descripcion>
+    <precio>100€</precio>
+    <categoria>Periferico</categoria>
+    <disponibilidad>En stock</disponibilidad>
+    <imagen>https://droidpanic.com/wp-content/uploads/2016/12/IMG_20161127_171633.jpg</imagen>
+  </producto>
+  <producto codigo="4444">
+    <nombre>SSD 1TB</nombre>
+    <descripcion>Almacenamiento en estado solido</descripcion>
+    <precio>50€</precio>
+    <categoria>Componente</categoria>
+    <disponibilidad>Agotado</disponibilidad>
+    <imagen>https://www.bhphotovideo.com/images/images2000x2000/sandisk_sdssdh3_1t00g_g25_ultra_3d_1tb_ssd_1346596.jpg</imagen>
+  </producto>
+  <producto codigo="5555">
+    <nombre>Cable HDMI</nombre>
+    <descripcion>Cable HDMI de 1 metro</descripcion>
+    <precio>15€</precio>
+    <categoria>Cables</categoria>
+    <disponibilidad>En stock</disponibilidad>
+    <imagen>https://static1.srcdn.com/wordpress/wp-content/uploads/2020/04/71gqw-xbLyL.-AC-SL1500-.jpg</imagen>
+  </producto>
+</gestion>

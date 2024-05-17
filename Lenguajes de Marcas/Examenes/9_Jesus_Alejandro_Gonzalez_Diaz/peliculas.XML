@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<peliculas>
+  <pelicula>
+    <titulo>Psicosis</titulo>
+    <fecha>1960</fecha>
+    <director>Alfred Hitchcock</director>
+    <actor>Anthony Perkins</actor>
+    <actor>Janet Leigh</actor>
+  </pelicula>
+  <pelicula>
+    <titulo>Tres en un sofá</titulo>
+    <fecha>1966</fecha>
+    <director>Jerry Lewis</director>
+    <actor>Jerry Lewis</actor>
+    <actor>Janet Leigh</actor>
+  </pelicula>
+  <pelicula>
+    <titulo>Asesinato en el Orient Express</titulo>
+    <fecha>1966</fecha>
+    <director>Sidney Lumet</director>
+    <actor>Anthony Perkins</actor>
+    <actor>Lauren Bacall</actor>
+  </pelicula>
+</peliculas>

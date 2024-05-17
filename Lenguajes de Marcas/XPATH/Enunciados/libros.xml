@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<libros>
+    <libro id="1">
+        <titulo>Fundamentos de Sistemas de Bases de Datos</titulo>
+        <autor>
+            <apellidos>ELMASRI,</apellidos>
+            <nombre>R.A.</nombre>
+        </autor>
+        <autor>
+            <apellidos>Gomez</apellidos>
+            <nombre>Pepe</nombre>
+        </autor>
+
+        <editorial>Addison-Wesley</editorial>
+        <año>2007</año>
+        <precio>45.25</precio>
+    </libro>
+    <libro id="2">
+        <titulo>IntroducciÃ³n a los Sistemas de Bases de Datos </titulo>
+        <autor>
+            <apellidos>DATE</apellidos>
+            <nombre>C.J.</nombre>
+        </autor>
+        <editorial>Addison-Wesley</editorial>
+        <año>2001</año>
+        <precio>60.35</precio>
+    </libro>
+    <libro id="3">
+        <titulo>Bases de Datos</titulo>
+        <autor>
+            <apellidos>Santos</apellidos>
+            <nombre>E.</nombre>
+        </autor>
+        <autor>
+            <apellidos>Garcia</apellidos>
+            <nombre>A.</nombre>
+        </autor>
+        <autor>
+            <apellidos>Alonso</apellidos>
+            <nombre>S.</nombre>
+        </autor>
+        <autor>
+            <apellidos>Alarcon</apellidos>
+            <nombre>P.</nombre>
+        </autor>
+        <autor>
+            <apellidos>Garbajosa</apellidos>
+            <nombre>J.</nombre>
+        </autor>
+        <editorial>E.U. Informatica</editorial>
+        <año>1998</año>
+        <precio>20.00</precio>
+    </libro>
+    <libro id="4">
+        <titulo>Introducción a las Bases de Datos</titulo>
+        <autor>
+            <apellidos>Pons</apellidos>
+            <nombre>O.</nombre>
+        </autor>
+        <editorial>Thomson</editorial>
+        <año>2005</año>       
+        <precio>100.25</precio>
+    </libro>
+</libros>

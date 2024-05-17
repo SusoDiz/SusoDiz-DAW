@@ -1,0 +1,22 @@
+.uno{
+    width: 250px;
+    height: 200px;
+    border: 5px;
+    border-color: red;
+    border-style: solid;
+    background-color: lightgrey;
+    padding: 10px;
+    margin: 25px;
+}
+
+.dos{
+    width: 300px;
+    height: 200px;
+    border: 7px;
+    border-style: solid;
+    border-color: green;
+    background-color: gray;
+    color: white;
+    padding: 5px;
+    margin: 0px;
+}

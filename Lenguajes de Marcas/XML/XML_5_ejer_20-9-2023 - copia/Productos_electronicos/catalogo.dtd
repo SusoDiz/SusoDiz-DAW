@@ -1,0 +1,7 @@
+<!ELEMENT catalogo (producto+)>
+<!ELEMENT producto (nombre, descripcion, precio, caracteristicas)>
+<!ELEMENT caracteristicas (nombre, valor)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT descripcion (#PCDATA)>
+<!ELEMENT precio (#PCDATA)>
+<!ELEMENT valor (#PCDATA)>

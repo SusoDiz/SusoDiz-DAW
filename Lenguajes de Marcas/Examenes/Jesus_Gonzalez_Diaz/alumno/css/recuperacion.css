@@ -1,0 +1,102 @@
+h1 {
+    font-family: arial;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* Ejercicio 1 */
+
+.logo div {
+    box-shadow: 5px 5px 10px gray;
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+}
+
+.logo div:nth-child(1) {
+    background-color: #C0C0C0;
+    
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 100%;
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 100%;
+}
+
+.logo div:nth-child(2) {
+    background-color: #FFD700;
+    border-top-right-radius: 100%;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 100%;
+    border-top-left-radius: 0;
+}
+
+.logo {
+    position: relative;
+    float: right;
+    width: 5%;
+    height: 10%;
+    top: 50px;
+    right: 150px;
+    rotate: -100grad;
+}
+
+.logo:hover {
+    transition: 2s;
+    transform: rotate(-100grad) scale(1.5);
+}
+
+
+/* Ejercicio 2 */
+
+.uno, .dos, .tres {
+    position: absolute;
+    right: 50;
+    bottom: 0;
+    overflow: hidden;
+    color: white;
+}
+
+/* Ejercicio 3 */
+
+.boton_animado {
+    position: relative;
+    float: left;
+    top: 200px;
+    left: 150px;
+    width: 180px;
+    height: 50px;
+    border-radius: 50px;
+    border: solid 1px;
+    border-color: black;
+    overflow: hidden;
+    transition: 1s;
+}
+
+.boton {
+    background-color: navy;
+    padding-top: 1px;
+    transition: 0.5s;
+}
+
+.boton p {
+    color: white;
+    text-align: center;
+    transition: 1s;
+}
+
+.boton_animado:hover {
+    border-radius: 50px;
+}
+
+.boton:hover {
+    position: relative;
+    transform: translate(0px, -35px);
+    padding-bottom: 40px;
+    background-color: olive;
+}
+
+
+.boton:hover p .boton2 {
+    color: white;
+    font-size: large;
+}

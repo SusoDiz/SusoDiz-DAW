@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<menu>
+  <pizza>
+    <nombre>Barbacoa</nombre>
+    <precio>8</precio>
+    <ingredientes>Salsa Barbacoa, Queso, Pollo, Bacon, Jamón, Ternera</ingredientes>
+  </pizza>
+  <pizza>
+    <nombre>Hawaiana</nombre>
+    <precio>7</precio>
+    <ingredientes>Tomate, Mozarella, Jamón, Piña, Queso</ingredientes>
+  </pizza>
+  <pizza>
+    <nombre>4 Quesos</nombre>
+    <precio>7</precio>
+    <ingredientes>Tomate, mezcla de 4 quesos</ingredientes>
+  </pizza>
+  <pizza>
+    <nombre>Margarita</nombre>
+    <precio>6</precio>
+    <ingredientes>Tomate, Jamón, Queso</ingredientes>
+  </pizza>
+</menu>

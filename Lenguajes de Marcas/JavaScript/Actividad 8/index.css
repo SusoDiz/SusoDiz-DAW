@@ -1,0 +1,125 @@
+body {
+    font-family: Arial;
+    margin: 2%;
+    padding: 0;
+    background-color: #f1f1f1;
+
+}
+
+#botonTabla {
+    position: absolute;
+    display: inline-block;
+    left: 225px;
+    top: 80px;
+}
+
+#botonCambiaColor {
+    position: absolute;
+    display: inline-block;
+    left: 420px;
+    top: 80px;
+}
+
+#botonTabla, #botonCambiaColor {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#selectColor {
+    position: absolute;
+    left: 350px;
+    top: 95px;
+    border: none;
+    border-radius: 5px;
+    transform: scale(1.5);
+}
+
+#tamaño {
+    position: absolute;
+    left: 575px;
+    top: 95px;
+    border: none;
+    border-radius: 5px;
+    transform: scale(1.5);
+}
+
+td {
+    width: 90px;
+    height: 90px;
+    margin: 0;
+    border: 3px solid black;
+}
+
+#borrar {
+    position: absolute;
+    display: inline-block;
+    width: 90px;
+    left: 225px;
+    top: 90px;
+    padding: 10px;
+    background-color: #d40000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#circulo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 25px;
+    padding: 0;
+    align-items: center;
+}
+
+#botonArriba, #botonAbajo, #botonIzquierda, #botonDerecha, #botonCentro {
+    position: fixed;
+    font-size: xx-large;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    padding: 10px;
+    background-color: #00a5eb;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+#botonArriba {
+    position: absolute;
+    left: 900px;
+    bottom: 600px;
+}
+
+#botonAbajo {
+    position: absolute;
+    left: 900px;
+    bottom: 400px;
+}
+
+#botonIzquierda {
+    position: absolute;
+    left: 800px;
+    bottom: 500px;
+}
+
+#botonDerecha {
+    position: absolute;
+    left: 1000px;
+    bottom: 500px;
+}
+
+#botonCentro {
+    position: absolute;
+    left: 900px;
+    bottom: 500px;
+}

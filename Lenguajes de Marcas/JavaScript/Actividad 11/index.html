@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Adivina la Frase</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <div>
+        <h1>Adivina la Frase</h1>
+        <p id="frase"></p>
+        <div id="letras"></div>
+        <p id="mensaje"></p>
+        <button id="reinicio" style="display: none;" onclick="iniciarJuego();">Reiniciar</button>
+    </div>
+
+    <script>
+        var frases = ["La ruleta de la fortuna", "Me gusta programar", "El sol brilla hoy"];
+        var frase;
+        var adivinado;
+        var letras = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
+        function iniciarJuego() {
+            frase = frases[Math.floor(Math.random() * frases.length)].toUpperCase();
+            adivinado = Array(frase.length).fill('_');
+
+            for (var i = 0; i < frase.length; i++) {
+                if (frase[i] === ' ') {
+                    adivinado[i] = '-';
+                }
+            }
+
+            document.getElementById('frase').textContent = adivinado.join(' ');
+            document.getElementById('mensaje').textContent = "";
+            document.getElementById('reinicio').style.display = "none";
+
+            for (var i = 0; i < letras.length; i++) {
+                var btn = document.getElementById('btn' + letras[i]);
+                btn.disabled = false;
+            }
+        }
+
+        for (var i = 0; i < letras.length; i++) {
+            var btn = document.createElement("button");
+            btn.id = 'btn' + letras[i];
+            btn.textContent = letras[i];
+            btn.onclick = function (e) {
+                var letra = e.target.textContent;
+                e.target.disabled = true;
+                var acierto = false;
+                for (var j = 0; j < frase.length; j++) {
+                    if (frase[j] === letra) {
+                        adivinado[j] = letra;
+                        acierto = true;
+                    }
+                }
+
+                document.getElementById('frase').textContent = adivinado.join(' ');
+                
+                if (!adivinado.includes('_')) {
+                    document.getElementById('mensaje').textContent = "¡Felicidades! Has adivinado la frase.";
+                    document.getElementById('reinicio').style.display = "block";
+                }
+            };
+            document.getElementById('letras').appendChild(btn);
+        }
+
+        iniciarJuego();
+    </script>
+</body>
+
+</html>

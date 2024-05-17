@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>Formulario</title>
+    </head>
+    <body>
+        <form>
+            <fieldset>
+                <legend>Datos personales</legend>
+                Nombre y apellidos <input type="text" size="30">
+                <br>
+                Situación laboral 
+                <select id="desplegable" name="desplegable">
+                    <option value="" selected="selected"></option>
+                    <option value="Estudiante">Estudiante</option>
+                    <option value="En paro">En paro</option>
+                    <option value="En activo">En activo</option>
+                    <option value="Jubilado">Jubilado</option>
+                </select>
+                <br>
+                <input type="radio" name="edad" value="menor 18">menor 18 <br>
+                <input type="radio" name="edad" value="menor 18">entre 18 y 25 <br>
+                <input type="radio" name="edad" value="menor 18">entre 26 y 50 <br>
+                <input type="radio" name="edad" value="menor 18">mayor 50
+            </fieldset>
+            <fieldset>
+                <legend>Información interes</legend>
+                <input type="checkbox" name="sentido">gusto 
+                <input type="checkbox" name="sentido">olfato 
+                <input type="checkbox" name="sentido">tacto 
+                <input type="checkbox" name="sentido">oido 
+                <input type="checkbox" name="sentido">vista 
+            </fieldset>
+            <input type="checkbox" name="sentido" checked="checked">Suscribirse
+            <br>
+            <input type="button" name="enviar" value="Enviar">
+            <input type="reset" name="restablecer" value="Restablecer">
+        </form>
+        <a href="../../index.html">Pagina Principal</a>
+    </body>
+</html>

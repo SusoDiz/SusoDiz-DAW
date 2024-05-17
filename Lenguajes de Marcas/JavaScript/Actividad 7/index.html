@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title>Actividad 7</title>
+        <link rel="stylesheet" href="./index.css">
+        <script type="text/javascript" src="./index.js"></script>
+    </head>
+    <body>
+        <div id="div">
+            <img id="imagen" src="./img/bola_de_cristal.png" alt="Moai1">
+        </div>
+        
+        <div id="radioButtons"></div>
+        
+        <script>
+            var imagenes = ["./img/bola_de_cristal.png", "./img/moai-nubes-sol.jpg", "./img/moai-nubes.png", "./img/superbowl.png"];
+            
+            var radioButtonsDiv = document.getElementById("radioButtons");
+            
+            for (var i = 0; i < imagenes.length; i++) {
+                var radioButton = document.createElement("input");
+                radioButton.type = "radio";
+                radioButton.name = "imagen";
+                radioButton.value = i;
+                radioButton.addEventListener("click", function() {
+                    var imagen = document.getElementById("imagen");
+                    imagen.src = imagenes[this.value];
+                });
+                
+                radioButtonsDiv.appendChild(radioButton);
+            }
+            radioButtonsDiv.children[0].checked = true;
+        </script>
+    </body>
+</html>

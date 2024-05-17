@@ -1,0 +1,11 @@
+<!ELEMENT bib (book+)>
+<!ELEMENT book (title, (author+ | editor), publisher, price)>
+<!ELEMENT author (last, first)>
+<!ELEMENT editor (last, first, affiliation)>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT publisher (#PCDATA)>
+<!ELEMENT price (#PCDATA)>
+<!ELEMENT last (#PCDATA)>
+<!ELEMENT first (#PCDATA)>
+<!ELEMENT affiliation (#PCDATA)>
+<!ATTLIST book year CDATA #REQUIRED>

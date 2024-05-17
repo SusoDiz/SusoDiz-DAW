@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE aeropuertos SYSTEM "aeropuerto.dtd">
+
+<aeropuertos>
+  <aeropuerto>
+    <nombre>JFK</nombre>
+    <vuelos>
+      <vuelo código="V22" estado="R">
+         <diario />
+         <origen>New York</origen>
+         <destino>Chicago</destino>
+         <hora-salida>09:30:00</hora-salida>
+         <hora-llegada>11:30:00</hora-llegada>
+      </vuelo>
+      <vuelo código="V23" estado="C">
+         <origen>New York</origen>
+         <destino>Miami</destino>
+         <hora-salida>10:15:00</hora-salida>
+         <hora-llegada>11:15:00</hora-llegada>
+      </vuelo>
+      <vuelo código="V24" estado="E">
+         <origen>New York</origen>
+         <destino>Montreal</destino>
+         <hora-salida>17:34:00</hora-salida>
+         <hora-llegada>19:15:00</hora-llegada>
+      </vuelo>
+   </vuelos>
+   <fecha>2023-10-10</fecha>
+  </aeropuerto>
+  <aeropuerto>
+  <nombre>Barajas</nombre>
+    <vuelos>
+      <vuelo código="X34" estado="E">
+         <origen>Madrid</origen>
+         <destino>New York</destino>
+         <hora-salida>10:00:00</hora-salida>
+         <hora-llegada>12:10:00</hora-llegada>
+      </vuelo>
+    </vuelos>
+    <fecha>2023-10-18</fecha>
+  </aeropuerto>
+</aeropuertos>

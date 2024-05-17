@@ -1,0 +1,19 @@
+html{
+    background-color: lightgray;
+}
+
+.cabecera{
+    background-color: forestgreen;
+    text-align: right;
+    color: white;
+    padding-right: 10px;
+    margin-bottom: 0;
+}
+
+h1{
+    text-align: center;
+    background-color: thistle;
+    margin-top: 0;
+    text-decoration: underline;
+    letter-spacing: 5px;
+}

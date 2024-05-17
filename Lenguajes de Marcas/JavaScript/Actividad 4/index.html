@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Ejercicio javascript – DOM</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <script>
+        function enviarSaludo() {
+            var nombre = document.getElementById("nombre").value;
+            var apellido = document.getElementById("apellido").value;
+            var saludo = document.getElementById("saludo");
+            saludo.innerHTML = "Hola " + nombre + " " + apellido + ", gracias por rellenar el formulario";
+        }
+    </script>
+</head>
+
+<body>
+
+    <form>
+        <label for="nombre">Nombre:</label><input type="text" id="nombre">
+        <label for="apellido">Apellido:</label><input type="text" id="apellido">
+        <input type="button" value="Rellenar datos" onclick="enviarSaludo()">
+    </form>
+
+    <p id="saludo"></p>
+</body>
+
+</html>

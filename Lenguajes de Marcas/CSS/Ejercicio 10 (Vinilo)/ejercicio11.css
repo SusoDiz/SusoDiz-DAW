@@ -1,0 +1,18 @@
+.portada {
+    position: absolute;
+    z-index: 10;
+    float: left;
+    width: 200px;
+    height: auto;
+}
+
+.disco {
+    position: absolute;
+    z-index: 5;
+    transition: transform 2s;
+}
+
+.disco:hover {
+    transform: translateX(200px) rotate(180deg);
+    z-index: 11;
+}

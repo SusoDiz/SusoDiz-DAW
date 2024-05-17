@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Adivina la Frase</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <div>
+        <h1>Adivina la Frase</h1>
+        <p id="frase"></p>
+        <div id="letras"></div>
+        <p id="mensaje"></p>
+        <button id="reinicio" style="display: none;" onclick="iniciarJuego();">Reiniciar</button>
+        <br><br>
+        <h1>Lo se!!</h1>
+        <input type="text" id="respuesta" placeholder="Escribe tu respuesta">
+        <button id="comprobar" onclick="comprobarRespuesta()">Comprobar</button>
+    </div>
+
+    <script>
+        var frases = [
+            "La ruleta de la fortuna",
+            "Me gusta programar",
+            "Ejercicio de JavaScript",
+            "El tiempo es oro"
+        ];
+
+        var frase;
+        var adivinado;
+        var letras = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
+        function iniciarJuego() {
+
+            frase = frases[Math.floor(Math.random() * frases.length)].toUpperCase();
+            adivinado = Array(frase.length).fill('_');
+
+            for (var i = 0; i < frase.length; i++) {
+                if (frase[i] === ' ') {
+                    adivinado[i] = ' ';
+                }
+            }
+
+            document.getElementById('frase').textContent = adivinado.join(' ');
+            document.getElementById('mensaje').textContent = "";
+            document.getElementById('reinicio').style.display = "none";
+
+            for (var i = 0; i < letras.length; i++) {
+                var btn = document.getElementById('btn' + letras[i]);
+                btn.disabled = false;
+            }
+        }
+
+        for (var i = 0; i < letras.length; i++) {
+            var btn = document.createElement("button");
+            btn.id = 'btn' + letras[i];
+            btn.textContent = letras[i];
+            btn.onclick = function (e) {
+                var letra = e.target.textContent;
+                e.target.disabled = true;
+                var acierto = false;
+                for (var j = 0; j < frase.length; j++) {
+                    if (frase[j] === letra) {
+                        adivinado[j] = letra;
+                        acierto = true;
+                    }
+                }
+
+                document.getElementById('frase').textContent = adivinado.join(' ');
+
+                if (!adivinado.includes('_')) {
+                    document.getElementById('mensaje').textContent = "¡Felicidades! Has adivinado la frase.";
+                    document.getElementById('reinicio').style.display = "block";
+                }
+            };
+            document.getElementById('letras').appendChild(btn);
+        }
+
+        function comprobarRespuesta() {
+            var respuesta = document.getElementById('respuesta').value.toUpperCase();
+            if (respuesta === frase) {
+                document.getElementById('mensaje').textContent = "¡Felicidades! Has adivinado la frase.";
+                document.getElementById('reinicio').style.display = "block";
+                for (var i = 0; i < letras.length; i++) {
+                    var btn = document.getElementById('btn' + letras[i]);
+                    btn.disabled = true;
+                }
+                adivinado = frase.split(' ');
+                document.getElementById('frase').textContent = adivinado;
+                document.getElementById('comprobar').disabled = true;
+            } else {
+                document.getElementById('mensaje').textContent = "¡Vaya! Esa no es la frase.";
+            }
+        }
+
+        iniciarJuego();
+    </script>
+</body>
+
+</html>

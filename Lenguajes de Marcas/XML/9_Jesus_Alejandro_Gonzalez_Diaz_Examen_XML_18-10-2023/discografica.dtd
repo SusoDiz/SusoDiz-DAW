@@ -1,0 +1,17 @@
+<!ELEMENT disco (nombre-pais+, cancion+)>
+<!ELEMENT cancion (titulo, compositor+, productor?, discografica+, artista+)>
+<!ELEMENT compositor (nombre-pais?, pais, nombre, apellidos)+>
+<!ELEMENT productor (nombre-pais?, pais, nombre, apellidos)>
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT discografica (#PCDATA)>
+<!ELEMENT artista (#PCDATA)>
+<!ELEMENT pais (#PCDATA)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT apellidos (#PCDATA)>
+<!ELEMENT nombre-pais EMPTY>
+<!ATTLIST nombre-pais nombre NMTOKENS #REQUIRED>
+ <!ATTLIST nombre-pais codigo ID #REQUIRED>
+<!ATTLIST cancion duracion CDATA #REQUIRED>
+<!ATTLIST cancion año CDATA #IMPLIED>
+<!ATTLIST artista sexo CDATA #IMPLIED>
+<!ATTLIST pais nombre-pais IDREFS #IMPLIED>

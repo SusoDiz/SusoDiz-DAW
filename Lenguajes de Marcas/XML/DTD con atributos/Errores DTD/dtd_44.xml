@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE resoluciones [
+  <!ELEMENT resoluciones (resolucion)+>
+  <!ELEMENT resolucion EMPTY>
+  <!ATTLIST resolucion nombre NMTOKENS #REQUIRED>
+  <!ATTLIST resolucion alto CDATA #REQUIRED>
+  <!ATTLIST resolucion ancho CDATA #REQUIRED>
+]>
+
+<resoluciones>
+  <resolucion nombre="VGA" alto="480" ancho="640" />
+  <resolucion nombre="XGA" alto="1024" ancho="768" />
+  <resolucion nombre="HD 1080" alto="1920" ancho="1080" />
+</resoluciones>
